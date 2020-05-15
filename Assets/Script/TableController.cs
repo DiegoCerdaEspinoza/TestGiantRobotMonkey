@@ -22,7 +22,7 @@ public class TableController : MonoBehaviour
     void Start()
     {
 
-        StreamReader file = File.OpenText("Assets/StreamingAssets/JsonChallenge.json");
+        StreamReader file = File.OpenText(Application.dataPath+"/StreamingAssets/JsonChallenge.json");
 
         JsonTest json = JsonConvert.DeserializeObject<JsonTest>(file.ReadToEnd());
 
